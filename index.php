@@ -6,9 +6,9 @@ class Movie {
     public $genre;
     public $year;
     public $language;
-    //actor
+    public $actor;
 
-    function _construct ( 
+    function __construct ( 
         String $_title, 
         String $_genre, 
         Int $_year, 
@@ -27,6 +27,23 @@ class Movie {
     }
 
 
+}
+
+
+class Actor{
+    public $name;
+    public $surname;
+    public $age;
+    public $internationality;
+
+    function _construct(
+        String $name,
+        String $surname,
+        Int $age,
+        String $internationality
+    ){
+
+    }
 }
 
 //$mission_impossible = new Movie ();
