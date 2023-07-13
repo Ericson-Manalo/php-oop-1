@@ -17,15 +17,20 @@ class Movie {
     }
 
 
+    function getMovieName(){
+        return $this->title;
+    }
+
 
 }
 
-$missione_impossible = new Movie ();
-$missione_impossible -> title = 'Mission Impossible';
-$missione_impossible -> genre = 'action';
-$missione_impossible -> year = 1996;
-$missione_impossible -> language = 'English';
+$mission_impossible = new Movie ();
+$mission_impossible -> title = 'Mission Impossible';
+$mission_impossible -> genre = 'action';
+$mission_impossible -> year = 1996;
+$mission_impossible -> language = 'English';
 
-var_dump ($missione_impossible);
+echo $mission_impossible -> getMovieName();
+var_dump ($mission_impossible);
 
 ?>
