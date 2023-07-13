@@ -8,7 +8,12 @@ class Movie {
     public $language;
     //actor
 
-    function _construct ( $_title, $_genre, $_year, $_language){
+    function _construct ( 
+        String $_title, 
+        String $_genre, 
+        Int $_year, 
+        String $_language){
+
         $this->title = $_title;
         $this->genre = $genre;
         $this->year = $year;
@@ -29,8 +34,18 @@ $mission_impossible -> title = 'Mission Impossible';
 $mission_impossible -> genre = 'action';
 $mission_impossible -> year = 1996;
 $mission_impossible -> language = 'English';
-
+//$mission_impossible = new Movie ('Mission Impossible', 'Action', 1996, 'English');
 echo $mission_impossible -> getMovieName();
 var_dump ($mission_impossible);
+
+
+$insidious = new Movie ();
+$insidious -> title = 'Insidious: the red door';
+$insidious -> genre = 'horror';
+$insidious -> year = 2023;
+$insidious -> language = 'English';
+echo $insidious -> getMovieName();
+var_dump ($insidious);
+
 
 ?>
